@@ -1,0 +1,45 @@
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <title>已有新闻页面</title>
+        <link rel="stylesheet" href="style/operate.css">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/operate.js"></script>
+        <script type="text/javascript">
+                window.onload = function () {
+                        LoadNewsTable();
+                }   
+        </script>
+</head>
+
+<body>
+        <button class="add" onclick="add()">添加新闻</button>
+        <div class="left">
+                <div class="buttonOutter">
+                        <ul id="tabs">
+                                <li class="current" id="tab1"><a href="#" title="tab1">徕卡新闻</a></li>
+                                <li><a href="#" title="tab2">行业新闻</a></li>
+                        </ul>
+                </div>
+                <div class="tableth">
+                        <table border="1" cellspacing="0">
+                                <thead>
+                                        <tr>
+                                                <th style="width:121px">资源ID</th>
+                                                <th style="width:270px">新闻名称</th>
+                                                <th style="width:118px">日期</th>
+                                                <th style="width:179px">操作</th>
+                                        </tr>
+                                </thead>
+                        </table>
+                </div>
+                <div class="table">
+                        <table border="1" cellspacing="0">
+                                <tbody id="tbody"></tbody>
+                        </table>
+                </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>上传成功</title>
+    <style>
+        p {
+            margin-top: 30%;
+            margin-left: 46%;
+            font-size: 16px;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            background: rgba(0, 151, 167, 0.85);
+            font-weight: bolder;
+            color: azure;
+            outline: 0;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        img {
+            position: fixed;
+            width: 12%;
+            height: 17%;
+            top: 20%;
+            left: 43%;
+        }
+
+        .edit {
+            position: fixed;
+            top: 60%;
+            left: 20%;
+        }
+
+        .add {
+            position: fixed;
+            top: 60%;
+            right: 20%;
+        }
+    </style>
+    <script type="text/javascript">
+        function editInfo() {
+            window.location.href = 'operate.html';
+        }
+
+        function add() {
+            window.location.href = 'Submit.html';
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="success">
+        <img src="img/success.png">
+        <p>上传成功</p>
+        <button class="edit" id="edit" onclick=editInfo()>编辑已有新闻</button>
+        <button class="add" id="add" onclick=add()>继续添加新闻</button>
+    </div>
+</body>
+
+</html>

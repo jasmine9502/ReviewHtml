@@ -1,0 +1,30 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>上传页面</title>
+    <link rel="stylesheet" href="style/submit.css">
+</head>
+
+<body>
+    <button class="edit" id="edit" onclick=editInfo()>编辑已有新闻</button>
+    <div class="upload">
+        <div class="upLoadType">
+                <p class="normal">请选择上传类型</p>
+                <input type="radio" name="listType" value="news" checked>头条新闻 
+                <input type="radio" name="listType" value="product">行业新闻
+                <br>
+        </div>
+            <h1>选择导入.xlxs文件</h1>
+            <input type="file" name="xlfile" id="xlf" />
+            <div id="htmlout" style="display:none"></div>
+            <button class="add" id="add" onclick=addContainer()>添加新新闻链接</button>
+            <input type="submit" class="submit" name="submit" value=" 提交信息 " onclick=submitInfo() />
+    </div>
+    <div class="info" id="info">
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/submit.js"></script>
+</body>
+
+</html>

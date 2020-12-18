@@ -1,0 +1,56 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>编辑页面</title>
+    <style>
+        .container1 {
+            width: 75%;
+            padding: 5% 5%;
+            margin: 5% 5%;
+        }
+
+        .confirmEdit {
+            margin-top: 30px;
+            width: 120px;
+            height: 30px;
+            background: rgba(0, 151, 167, 0.85);
+            font-weight: bolder;
+            color: azure;
+            outline: 0;
+            border-radius: 5px;
+        }
+    </style>
+    <link rel="stylesheet" href="style/submit.css">
+</head>
+
+<body>
+    <button class="edit" id="edit" onclick=editInfo()>编辑已有新闻</button>
+    <button class="edit" id="add" onclick=add()>添加新闻</button>
+    <div class="container1">
+        <div class="content" id="content01">
+            <div class="contentText">
+                <p class="normal">标题</p>
+                <textarea class="titles" type="text" id="Title01" cols="60" rows="2"></textarea>
+                <p class="normal">日期</p>
+                <textarea class="titles" type="text" id="Time01" cols="30" rows="1"></textarea>
+                <p class="normal">网址</p>
+                <textarea class="titles" type="text" id="Url01" cols="60" rows="3"></textarea>
+                <button class="confirmEdit" onclick=editSingleNews()>修改该条记录</button>
+            </div>
+            <div class="contentImg">
+                <p class="normal">图片:<span style="font-size: 10px">(可以更换本地图片)</span></p>
+                <input type="file" id="readImg01" onchange="showImage(this,'showImg01')" accept="image/*"
+                    value="选择图片" />
+                <input type="button" value="取消该图片" onclick="call('showImg01','readImg01');" />
+                <img id="showImg01" style="border: solid #afafaf 0.8px"
+                    src="https://lsservice.leicacloud.com:1201/WebpageTemplate/Image/8.png" />
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/submit.js"></script>
+    <script src="js/edit.js"></script>
+</body>
+
+</html>

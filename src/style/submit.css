@@ -1,0 +1,156 @@
+.info {
+    float: left;
+    margin:0 10px 10px 30px;
+}
+.title{
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+a {
+    color: #1a1a1a;
+    font-size: 8px;
+    margin-top: -5px;
+}
+
+h1{
+    font-size: 18px;
+    text-align: left;
+    color:#333333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p{
+    font-size: 12px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    white-space: pre-wrap;
+    margin-top: 8px;
+}
+
+.upload {
+    margin: 20px 30px;
+}
+
+.normal {
+    font-size: 15px;
+}
+
+span {
+    font-weight: bolder;
+}
+
+.contentImg{
+    margin-left:20px;
+    padding-top:10px;
+}
+
+.titles {
+    display: block;
+    margin-bottom:10px;
+}
+
+.content{
+    overflow: hidden;
+    margin-top:15px;
+    margin-left:30px;
+    border: dashed #4dd0e1 1px;
+    padding: 5px;
+}
+
+.contentInput{
+    margin-top:10px;
+}
+
+.search {
+    display: block;
+    margin-top:10px;
+    color: brown;
+}
+
+.contentImg input{
+    display:block;
+    margin-bottom: 20px;
+}
+
+.contentText{
+    float: left;
+}
+
+.contentText p {
+    font-size: 14px;
+}
+
+.contentImg{
+    float: right;
+    margin-left:40px;
+    padding-top:0;
+}
+
+.contentImg img {
+    width: 98px;
+    height: 98px;
+    margin-top:-10px;
+}
+
+.contentImg input{
+    display:block;
+    margin-top:-5px;
+}
+
+/*添加文字图片模块*/
+.add {
+   
+    position: fixed;
+    bottom: 100px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: rgba(0,151,167,0.85);
+    font-weight: bolder;
+    color: azure;
+    outline:0; 
+    border-radius: 40px;
+}
+
+.submit{
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    background: rgba(0,151,167,0.85);
+    font-weight: bolder;
+    color: azure;
+    outline:0;
+    border-radius: 40px;
+}
+
+
+.showModule {
+    margin-bottom: 10px;
+}
+
+.rightShow {
+    float: right;
+    position:fixed;
+    right: 20px;
+    top:0px;
+}
+
+.navigation {
+    margin-bottom: 30px;
+}
+
+.edit {
+    width:120px;
+    height:30px;
+    border-radius: 30px;
+    background-color: #00acc1;
+    font-size: 15px;
+    color:white;
+    outline:0; 
+    font-weight: bolder;
+}
+
